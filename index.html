@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header></header> -->
+
+    <main>
+        <section class="calcContainer">
+            <table>
+                <!-- <thead></thead> -->
+                <tbody>
+                    <tr>
+                        <td colspan="4"><input type="text" id="resultShow" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="AC" class="operation" onclick="Clear()"></td>
+                        <td><input type="button" value="del" class="operation" onclick="del()"></td>
+                        <td><input type="button" value="^" class="operation" onclick="display('**')"></td>
+                        <td><input type="button" value="/" class="operation" onclick="display('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" class="num" onclick="display('7')"></td>
+                        <td><input type="button" value="8" class="num" onclick="display('8')"></td>
+                        <td><input type="button" value="9" class="num" onclick="display('9')"></td>
+                        <td><input type="button" value="*" class="operation" onclick="display('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" class="num" onclick="display('4')"></td>
+                        <td><input type="button" value="5" class="num" onclick="display('5')"></td>
+                        <td><input type="button" value="6" class="num" onclick="display('6')"></td>
+                        <td><input type="button" value="-" class="operation" onclick="display('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" class="num" onclick="display('1')"></td>
+                        <td><input type="button" value="2" class="num" onclick="display('2')"></td>
+                        <td><input type="button" value="3" class="num" onclick="display('3')"></td>
+                        <td><input type="button" value="+" class="operation" onclick="display('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="%" class="operation" onclick="display('%')"></td>
+                        <td><input type="button" value="0" class="num" onclick="display('0')"></td>
+                        <td><input type="button" value="." class="num" onclick="display('.')"></td>
+                        <td><input type="button" value="=" class="equal" onclick="calculate('=')"></td>
+                    </tr>
+                </tbody>
+                <!-- <tfoot></tfoot> -->
+            </table>
+        </section>
+    </main>
+
+    <!-- <footer></footer> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
