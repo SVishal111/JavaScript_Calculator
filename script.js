@@ -9,7 +9,8 @@ function calculate(){
         resultShow.value = eval(resultShow.value)
     }
     catch(err){
-        alert("Invalid!")
+        alert("Invalid Input!")
+        resultShow.value = "";
     }
 }
 
